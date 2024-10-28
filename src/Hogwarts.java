@@ -14,12 +14,15 @@ public class Hogwarts {
     }
 
     public void compareStudentOnHogwarts(Hogwarts student) {
-        if (this.sumSkillsOfHogwarts()>student.sumSkillsOfHogwarts()) {
-            System.out.println(this.getNameStudent()+" обладает большей мощностью магии, чем "
-            +student.getNameStudent());
-        }else {
-            System.out.println(student.getNameStudent()+" обладает большей мощностью магии, чем "
-                    +this.getNameStudent());
+        if (this.sumSkillsOfHogwarts() > student.sumSkillsOfHogwarts()) {
+            System.out.println(this.getNameStudent() + " обладает большей мощностью магии, чем "
+                    + student.getNameStudent());
+        }
+        if (this.sumSkillsOfHogwarts() == student.sumSkillsOfHogwarts()) {
+            System.out.println(this.getNameStudent() + " и " + student.getNameStudent() + " одиноково хороши");
+        } else {
+            System.out.println(student.getNameStudent() + " обладает большей мощностью магии, чем "
+                    + this.getNameStudent());
         }
     }
 

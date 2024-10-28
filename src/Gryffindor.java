@@ -14,6 +14,9 @@ public class Gryffindor extends Hogwarts {
         if (this.sumAllSkillsOfFacultative() > student.sumAllSkillsOfFacultative()) {
             System.out.println(this.getNameStudent() + " Лучший грифиндоровец чем " +
                     student.getNameStudent());
+        }
+        if (this.sumAllSkillsOfFacultative() == student.sumAllSkillsOfFacultative()) {
+            System.out.println(this.getNameStudent() + " и " + student.getNameStudent() + " одиноково хороши");
         } else {
             System.out.println(student.getNameStudent() + " Лучший грифиндоровец чем " +
                     this.getNameStudent());
