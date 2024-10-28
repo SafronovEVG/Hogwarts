@@ -5,9 +5,9 @@ public class Gryffindor extends Hogwarts {
 
     public Gryffindor(String nameStudent, String surnameStudent) {
         super(nameStudent, surnameStudent);
-        setBravery(randomAspect());
-        setHonor(randomAspect());
-        setNobility(randomAspect());
+        this.bravery = randomAspect();
+        this.honor = randomAspect();
+        this.bravery = randomAspect();
     }
 
     public void compareStudentsOnFacultative(Gryffindor student) {
