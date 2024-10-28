@@ -27,7 +27,7 @@ public class Hogwarts {
     }
 
     public int sumSkillsOfHogwarts() {
-        return getPowerMagic() + getTransgenerate();
+        return powerMagic + transgenerate;
     }
 
     @Override

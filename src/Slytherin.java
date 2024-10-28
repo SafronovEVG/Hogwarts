@@ -28,7 +28,7 @@ public class Slytherin extends Hogwarts {
     }
 
     public int sumAllSkillsOfFacultative() {
-        return getThirstForPower() + getAmbition() + getResourcefulness() + getDetermination() + getTrick();
+        return trick + determination + ambition + resourcefulness + thirstForPower;
     }
 
     @Override

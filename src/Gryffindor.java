@@ -5,7 +5,7 @@ public class Gryffindor extends Hogwarts {
 
     public Gryffindor(String nameStudent, String surnameStudent) {
         super(nameStudent, surnameStudent);
-        this.bravery = randomAspect();
+        this.nobility = randomAspect();
         this.honor = randomAspect();
         this.bravery = randomAspect();
     }
@@ -24,7 +24,7 @@ public class Gryffindor extends Hogwarts {
     }
 
     public int sumAllSkillsOfFacultative() {
-        return getHonor() + getBravery() + getNobility();
+        return honor + bravery + nobility;
     }
 
     @Override

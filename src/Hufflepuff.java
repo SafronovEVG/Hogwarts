@@ -24,7 +24,7 @@ public class Hufflepuff extends Hogwarts {
     }
 
     public int sumAllSkillsOfFacultative() {
-        return getHonesty() + getIndusriousness() + getLoyalty();
+        return indusriousness + honesty + loyalty;
     }
 
     @Override

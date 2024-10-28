@@ -26,7 +26,7 @@ public class Ravenclaw extends Hogwarts {
     }
 
     public int sumAllSkillsOfFacultative() {
-        return getWit() + getWisdom() + getMind() + getWit();
+        return mind + wisdom + wit + creativity;
     }
 
     @Override
