@@ -30,15 +30,6 @@ public class Hogwarts {
         return powerMagic + transgenerate;
     }
 
-    @Override
-    public String toString() {
-        return "Hogwarts{" +
-                "nameStudent='" + nameStudent + '\'' +
-                ", surnameStudent='" + surnameStudent + '\'' +
-                ", powerMagic=" + powerMagic +
-                ", transgenerate=" + transgenerate;
-    }
-
     public int randomAspect() {
         return new Random().nextInt(100);
     }
