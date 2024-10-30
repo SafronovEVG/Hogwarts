@@ -7,23 +7,22 @@ public class Slytherin extends Hogwarts {
 
     public Slytherin(String nameStudent, String surnameStudent) {
         super(nameStudent, surnameStudent);
-        this.trick = randomAspect();
-        this.determination = randomAspect();
-        this.ambition = randomAspect();
-        this.resourcefulness = randomAspect();
-        this.thirstForPower = randomAspect();
+        trick = randomAspect();
+        determination = randomAspect();
+        ambition = randomAspect();
+        resourcefulness = randomAspect();
+        thirstForPower = randomAspect();
     }
 
     public void compareStudentsOnFacultative(Slytherin student) {
-        if (this.sumAllSkillsOfFacultative() > student.sumAllSkillsOfFacultative()) {
-            System.out.println(this.getNameStudent() + " Лучший пуффендуевец чем " +
+        if (sumAllSkillsOfFacultative() > student.sumAllSkillsOfFacultative()) {
+            System.out.println(getNameStudent() + " Лучший пуффендуевец чем " +
                     student.getNameStudent());
-        }
-        if (this.sumAllSkillsOfFacultative() == student.sumAllSkillsOfFacultative()) {
-            System.out.println(this.getNameStudent() + " и " + student.getNameStudent() + " одиноково хороши");
+        } else if (sumAllSkillsOfFacultative() == student.sumAllSkillsOfFacultative()) {
+            System.out.println(getNameStudent() + " и " + student.getNameStudent() + " одиноково хороши");
         } else {
             System.out.println(student.getNameStudent() + " Лучший пуффендуевуц чем " +
-                    this.getNameStudent());
+                    getNameStudent());
         }
     }
 

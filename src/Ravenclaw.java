@@ -6,22 +6,21 @@ public class Ravenclaw extends Hogwarts {
 
     public Ravenclaw(String nameStudent, String surnameStudent) {
         super(nameStudent, surnameStudent);
-        this.mind = randomAspect();
-        this.wisdom = randomAspect();
-        this.wit = randomAspect();
-        this.creativity = randomAspect();
+        mind = randomAspect();
+        wisdom = randomAspect();
+        wit = randomAspect();
+        creativity = randomAspect();
     }
 
     public void compareStudentsOnFacultative(Ravenclaw student) {
-        if (this.sumAllSkillsOfFacultative() > student.sumAllSkillsOfFacultative()) {
-            System.out.println(this.getNameStudent() + " Лучший когтеврановец чем " +
+        if (sumAllSkillsOfFacultative() > student.sumAllSkillsOfFacultative()) {
+            System.out.println(getNameStudent() + " Лучший когтеврановец чем " +
                     student.getNameStudent());
-        }
-        if (this.sumAllSkillsOfFacultative() == student.sumAllSkillsOfFacultative()) {
-            System.out.println(this.getNameStudent() + " и " + student.getNameStudent() + " одиноково хороши");
+        } else if (sumAllSkillsOfFacultative() == student.sumAllSkillsOfFacultative()) {
+            System.out.println(getNameStudent() + " и " + student.getNameStudent() + " одиноково хороши");
         } else {
             System.out.println(student.getNameStudent() + " Лучший когтеврановец чем " +
-                    this.getNameStudent());
+                    getNameStudent());
         }
     }
 

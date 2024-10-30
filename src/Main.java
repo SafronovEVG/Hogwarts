@@ -12,5 +12,9 @@ public class Main {
         Ravenclaw chjoy = new Ravenclaw("Chjoy", "Chang");
         Ravenclaw padma = new Ravenclaw("Padma", "Patil");
         Ravenclaw marcus = new Ravenclaw("Marcus", " Belbi");
+        System.out.println("germiona.toString() = " + germiona.toString());
+        System.out.println("harry.toString() = " + harry.toString());
+        harry.compareStudentOnHogwarts(germiona);
+        harry.compareStudentsOnFacultative(germiona);
     }
 }

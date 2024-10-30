@@ -5,21 +5,20 @@ public class Gryffindor extends Hogwarts {
 
     public Gryffindor(String nameStudent, String surnameStudent) {
         super(nameStudent, surnameStudent);
-        this.nobility = randomAspect();
-        this.honor = randomAspect();
-        this.bravery = randomAspect();
+        nobility = randomAspect();
+        honor = randomAspect();
+        bravery = randomAspect();
     }
 
     public void compareStudentsOnFacultative(Gryffindor student) {
-        if (this.sumAllSkillsOfFacultative() > student.sumAllSkillsOfFacultative()) {
-            System.out.println(this.getNameStudent() + " Лучший грифиндоровец чем " +
+        if (sumAllSkillsOfFacultative() > student.sumAllSkillsOfFacultative()) {
+            System.out.println(getNameStudent() + " Лучший грифиндоровец чем " +
                     student.getNameStudent());
-        }
-        if (this.sumAllSkillsOfFacultative() == student.sumAllSkillsOfFacultative()) {
-            System.out.println(this.getNameStudent() + " и " + student.getNameStudent() + " одиноково хороши");
+        } else if (sumAllSkillsOfFacultative() == student.sumAllSkillsOfFacultative()) {
+            System.out.println(getNameStudent() + " и " + student.getNameStudent() + " одиноково хороши");
         } else {
             System.out.println(student.getNameStudent() + " Лучший грифиндоровец чем " +
-                    this.getNameStudent());
+                    getNameStudent());
         }
     }
 

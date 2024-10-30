@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class Hogwarts {
+public abstract class Hogwarts {
     private String nameStudent;
     private String surnameStudent;
     private int powerMagic;
@@ -14,15 +14,14 @@ public class Hogwarts {
     }
 
     public void compareStudentOnHogwarts(Hogwarts student) {
-        if (this.sumSkillsOfHogwarts() > student.sumSkillsOfHogwarts()) {
-            System.out.println(this.getNameStudent() + " обладает большей мощностью магии, чем "
+        if (sumSkillsOfHogwarts() > student.sumSkillsOfHogwarts()) {
+            System.out.println(getNameStudent() + " обладает большей мощностью магии, чем "
                     + student.getNameStudent());
-        }
-        if (this.sumSkillsOfHogwarts() == student.sumSkillsOfHogwarts()) {
-            System.out.println(this.getNameStudent() + " и " + student.getNameStudent() + " одиноково хороши");
+        } else if (sumSkillsOfHogwarts() == student.sumSkillsOfHogwarts()) {
+            System.out.println(getNameStudent() + " и " + student.getNameStudent() + " одиноково хороши");
         } else {
             System.out.println(student.getNameStudent() + " обладает большей мощностью магии, чем "
-                    + this.getNameStudent());
+                    + getNameStudent());
         }
     }
 

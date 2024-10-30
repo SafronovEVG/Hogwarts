@@ -5,21 +5,20 @@ public class Hufflepuff extends Hogwarts {
 
     public Hufflepuff(String nameStudent, String surnameStudent) {
         super(nameStudent, surnameStudent);
-        this.indusriousness = randomAspect();
-        this.honesty = randomAspect();
-        this.loyalty = randomAspect();
+        indusriousness = randomAspect();
+        honesty = randomAspect();
+        loyalty = randomAspect();
     }
 
     public void compareStudentsOnFacultative(Hufflepuff student) {
-        if (this.sumAllSkillsOfFacultative() > student.sumAllSkillsOfFacultative()) {
-            System.out.println(this.getNameStudent() + " Лучший пуффендуевец чем " +
+        if (sumAllSkillsOfFacultative() > student.sumAllSkillsOfFacultative()) {
+            System.out.println(getNameStudent() + " Лучший пуффендуевец чем " +
                     student.getNameStudent());
-        }
-        if (this.sumAllSkillsOfFacultative() == student.sumAllSkillsOfFacultative()) {
-            System.out.println(this.getNameStudent() + " и " + student.getNameStudent() + " одиноково хороши");
+        } else if (sumAllSkillsOfFacultative() == student.sumAllSkillsOfFacultative()) {
+            System.out.println(getNameStudent() + " и " + student.getNameStudent() + " одиноково хороши");
         } else {
             System.out.println(student.getNameStudent() + " Лучший пуффендуевуц чем " +
-                    this.getNameStudent());
+                    getNameStudent());
         }
     }
 
